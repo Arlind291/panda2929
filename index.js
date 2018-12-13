@@ -74,7 +74,7 @@ bot.on('message', (message) => {
 });
 //WELCOME
 bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find("name", "》genera")
+    let channel = member.guild.channels.find("name", "》general")
     let memberavatar = member.user.avatarURL
     if (!channel) return;
     let embed = new Discord.RichEmbed()
