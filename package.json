@@ -1,0 +1,21 @@
+{
+  "name": "vs-bot",
+  "version": "1.0.0",
+  "description": "db",
+  "main": "index.js",
+  "scripts": {
+    "test": "!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "db"
+  },
+  "keywords": [
+    "db"
+  ],
+  "author": "arlind",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
