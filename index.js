@@ -74,21 +74,19 @@ bot.on('message', (message) => {
 });
 //WELCOME
 bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find("name", "》general")
+    let channel = member.guild.channels.find("name", "》general_chat")
     let memberavatar = member.user.avatarURL
     if (!channel) return;
     let embed = new Discord.RichEmbed()
-    .setColor('RED')
-    .setThumbnail(memberavatar)
-    .addField(":bust_in_silhouette: | name : ", `${member}`)
-    .addField(":id: | User :", `${member.id}`)
-    .addField(":shield: | You are the", `${member.guild.memberCount}` + `  **MEMBER**`)
-    .addField("Server", `**${member.guild.name}**`)
-    .setFooter(member.guild.name)
+    .setDescription("\n ***Make sure to check out #》self-roles / #》colour-role and #》rules. Have Fun!*** \n" +
+    " \n \n",true +
+    "")
+    .setImage('https://media.giphy.com/media/26lxf83Mkclu8BwYfq/giphy.gif')
     .setTimestamp()
+    .setColor('RED')
     
     channel.send(embed)
-    channel.send(member.toString() +" **Welcome!** **Make sure to check out #self-roles / #colour-role and rules. Have Fun!**");
+    channel.send(member.toString() +" **Welcome!** :tada:");
 
     
     
